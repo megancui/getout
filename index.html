@@ -3,24 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
-    <script>
 
+  </head>
+  <body>
+    <script>
+      console.log("test");
       var username = prompt("What is the username?");
       var password = prompt("What is your password?");
 
       var user = "JOE"; //from fault lines
       var pass = "76453812"; //from cooper's tweets
 
-      if (username === user && password === pass) {
-        return;
+      if (username !== user && password !== pass) {
+        alert("Wrong!");
+        location.reload();
       }
       else {
-        location.reload();
+        alert("Correct!");
       }
 
     </script>
-  </head>
-  <body>
     <h1>This is the website</h1>
   </body>
 </html>
