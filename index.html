@@ -14,12 +14,12 @@
       var user = "BFHZE"; //from fault lines
       var pass = "76453812"; //from cooper's tweets
 
-      if (username !== user && password !== pass) {
-        alert("Wrong!");
-        location.reload();
+      if (username === user && password === pass) {
+        alert("Correct!");
       }
       else {
-        alert("Correct!");
+        alert("Wrong!");
+        location.reload();
       }
 
     </script>
